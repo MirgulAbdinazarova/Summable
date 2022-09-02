@@ -1,10 +1,9 @@
-package com.peaksoft;
+package com.Summable;
 
 public class City implements Summable{
     private int population;
     private String name;
-
-    public City(String name, int population) {
+    City(String name, int population) {
         this.population = population;
         this.name = name;
     }
@@ -12,13 +11,13 @@ public class City implements Summable{
     @Override
     public int add(Summable other) {
         // метод логикасын жазыныз
-        return 0;
+         return other.getValue()+this.population;
     }
 
     @Override
     public int getValue() {
         // метод логикасын жазыныз
-        return 0;
+        return population;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.peaksoft;
+package com.Summable;
 
 public interface Summable {
     int add(Summable other);
